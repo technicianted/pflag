@@ -800,6 +800,7 @@ func (f *FlagSet) Groups() []string {
 			groups = append(groups, flag.Group)
 		}
 	})
+	sort.Strings(groups)
 	return append(groups, "")
 }
 
