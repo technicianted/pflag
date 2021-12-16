@@ -709,7 +709,7 @@ func (f *FlagSet) FlagUsagesForGroupWrapped(group string, cols int) string {
 		if flag.Hidden {
 			return
 		}
-		if flag.Group != group {
+		if group != "" && flag.Group != group {
 			return
 		}
 
